@@ -1,10 +1,12 @@
 <script>
+//data 部分 undefined null
 export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: "Test",
     data() {
         return {
-            testMode:true
+            testMode:true,
+            testdata:true,
         };
     },
     methods: {
@@ -13,6 +15,9 @@ export default {
         },
         back(){
             this.testMode=true;
+        },
+        check(){
+            this.testdata=null;
         }
     }
 };
@@ -40,9 +45,10 @@ export default {
         我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡
       </div>
     </div>
-    <div v-show="testMode">
+    <div v-show="testdata">
       我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡我在這裡
     </div>
+    <button class="text-2xl border-2 rounded-xl p-3 hover:bg-slate-200 mt-6 ml-5" @click="check">TEST</button>
     <div class="mt-5">
       樓上怎麼了
     </div>

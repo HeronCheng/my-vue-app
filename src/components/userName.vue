@@ -17,7 +17,7 @@ export default {
 };
 </script>
 <template>
-  <div @click="deleteText">  
+  <div @click="deleteText" >  
     {{theName}}
   </div>
 </template>
